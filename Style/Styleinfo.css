@@ -1,0 +1,134 @@
+	body {
+		font-size: 18px;
+		background: white;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: scroll;
+		background-position: center;
+	}
+	@font-face {
+		font-family: 'DaMiOne';
+		src: url('Fonts/DaMiOne-Regular.eot'); /* IE */
+		src: url('Fonts/DaMiOne-Regular.woff2') format('woff2'),
+			 url('Fonts/DaMiOne-Regular.woff') format('woff'),
+			 url('Fonts/DaMiOne-Regular.ttf') format('truetype');
+	}
+	h2, h1, h4 {
+		font-family: 'DaMiOne';
+    }
+	a.text:active, /* активная/посещенная ссылка */
+	a.text:hover,  /* при наведении */
+	a.text {
+	  text-decoration: none;
+	  color: #666;
+	}
+	hr {
+		margin: 20px auto 10px;
+	
+		border: none;
+		border-bottom: 3px solid black;
+		width: 95%;
+	}
+	.parent {
+		display: grid;                         
+		place-items: center; 
+		justify-content: center;
+	}
+	input {
+		text-align: center;
+		font-family: 'DaMiOne';
+		width: 100px;
+		border: 3px solid black;
+		color: black;	
+	}
+	.PlusMinus {
+		border: 3px solid black;
+		font-family: 'DaMiOne';
+		font-size: 18px;
+		color: white;
+		border-width: 6px;
+		background: black;
+		justify-content: center;
+	}
+	.tforform {
+		color: black;
+		font-family: 'DaMiOne';
+		font-size: 24px;
+	}
+	.forform {
+		text-align: left;
+		font-family: 'DaMiOne';
+		width: 100%;
+		height: 40px;
+	}
+	/* Скрываем стандартный чекбокс */
+	input[type="checkbox"] {
+		position: absolute;
+		opacity: 0;
+		cursor: pointer;
+	}
+	/* Стили для кастомного чекбокса */
+	input[type="checkbox"] + label {
+		position: relative;
+		padding-left: 50px; /* Увеличен отступ для размещения чекбокса */
+		cursor: pointer;
+		font-size: 18px;
+		user-select: none;
+		display: flex;
+		align-items: center; /* Выравнивание по вертикали */
+	}
+	/* Квадрат чекбокса */
+	input[type="checkbox"] + label::before {
+		content: "";
+		position: absolute;
+		left: 0;
+		width: 40px;
+		height: 40px;
+		border: 3px solid #000;
+		background-color: transparent;
+		transition: background-color 0.3s, border-color 0.3s;
+	}
+	/* Галочка */
+	input[type="checkbox"]:checked + label::before {
+		background-color: #000;
+		border-color: #000;
+	}
+	input[type="checkbox"]:checked + label::after {
+		content: "";
+		position: absolute;
+		left: 13px; /* Корректировка для централизованного отображения галочки */
+		top: 11px;  /* Корректировка для централизованного отображения галочки */
+		width: 12px;
+		height: 24px;
+		border: solid white;
+		border-width: 0 4px 4px 0;
+		transform: rotate(45deg);
+	}
+	.forhint1 {
+		display: none; /* Скрываем контейнер по умолчанию */
+		border: 3px solid black; /* Граница 3px черного цвета */
+		margin-top: 5px; /* Отступ сверху для отделения от поля ввода */
+		position: absolute; /* Чтобы контейнер не раздвигал элементы вокруг */
+		background-color: white; /* Белый фон для предложений */
+		z-index: 1; /* Устанавливаем z-index, чтобы контейнер был поверх других элементов */
+	}
+	.autocomplete-item {
+		padding: 10px; /* Внутренние отступы для элементов списка */
+		cursor: pointer; /* Указатель при наведении на элемент */
+	}
+	.autocomplete-item:hover {
+		background-color: #f0f0f0; /* Цвет фона при наведении */
+	}
+	.buttom1 {
+		width: 385px;
+		height: 58px;
+		border: none;
+		outline: none;
+		color: white;
+		background: black;	
+		position: relative;
+		border-radius: 0px;
+		font-family: 'DaMiOne';
+		font-size: 25px;
+		text-align: center;
+	}
