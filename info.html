@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+	
+	
+	    <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	
+		<title>ORDER</title>
+		<link rel="icon" href="Image\Icon.png" type="image/png">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="Style/Styleinfo.css">
+		
+		
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>	
+		<script src="JS/SizeChart.js" defer></script>
+		<script src="JS/Price.js" defer></script>
+		<!--<script src="JS/Forms.js" defer></script> -->
+		<script src="JS/Sum + Counter.js" defer></script>
+		<script src="JS/Locality.js" defer></script>
+		<script src="JS/Hits.js" defer></script>
+		<!--<script src="JS/Final.js" defer></script>-->
+		<script src="JS/FormsFinal.js" defer></script>
+
+
+	</head>
+	<body>
+		<div class="container">
+	
+			<div class="row" style="justify-content: center; margin-top: 40px;" class="parent">
+				<div style="justify-content: left; align: left;">
+					<a href= "./product.html" class="text">
+						<img src="Image\Back2.png" width="17" alt="Back" style="margin-right: 50px; justify-content: left; margin-top: 5px;">
+					</a>
+				</div>
+				<h1>ВАШ ЗАКАЗ</h1>
+			</div>
+		
+			<hr>
+			
+			<div class="row" style="justify-content: center; margin-top: 30px; margin-bottom: 30px;">
+			
+				<div style="margin-right: 50px;">
+					<img src="Image\T-shirt2.png" width="200" alt="T-shirt" class="parent">
+				</div>
+				
+				<div>
+					<h2 style="margin-bottom: 30px">THE FIRST T-SHIRT</h2>
+					<h4 style="margin-bottom: 15px" id="size">РАЗМЕР:</h4>
+
+					<div class="number">
+						<span class="minus PlusMinus">-</span>
+						<input id="quantity" type="text" disabled value="1"/>
+						<span class="plus PlusMinus">+</span>
+					</div>
+				</div>
+				
+				<div style="margin-left: 50px;">
+					<h2 id="price">Р</h2>
+				</div>
+
+			</div>
+			
+				<hr>
+			
+
+				<h2 id="sum" style="margin-top: 30px; text-align: right; margin-right: 100px;">СУММА: Р</h2>
+				
+				
+				<h1 class="parent" style="margin-top: 30px;">ОФОРМЛЕНИЕ</h1>
+
+
+						<div class="row" style="justify-content: center;">
+						
+							<div style="margin-right: 50px;">
+							
+								<form id="myForm" action="#" method="post">        
+									<div style="margin-top: 35px;">
+										<label class="tforform" for="fullName">ВАШЕ ФИО</label><br>
+										<input id="fullName" class="forform" type="text" name="fullName" placeholder="ВЛАСОВ АНТОН ВИКТОРОВИЧ" required>
+									</div>
+									
+									<div style="margin-top: 35px;">
+										<label class="tforform" for="phoneNumber">КОНТАКТНЫЙ ТЕЛЕФОН</label><br>
+										<input id="phoneNumber" class="forform" type="tel" name="phoneNumber" placeholder="+7 999 999-99-99" required>
+									</div>
+									
+									<div style="margin-top: 35px;">
+										<label class="tforform" for="nickname">TELEGRAM</label><br>
+										<input id="nickname" class="forform" type="text" name="nickname" placeholder="@name" required>
+									</div>
+									
+							</div>
+
+							<div>
+							
+									<div style="margin-top: 35px;">
+										<label class="tforform" for="city">НАСЕЛЕННЫЙ ПУНКТ</label><br>
+										<input class="forform" type="text" name="city" placeholder="Г. МОСКВА" id="city" required>
+										<div class="forhint1" id="city-list"></div>
+									</div>
+
+									<div style="margin-top: 35px;">
+										<label class="tforform" for="pickupPoint">ПУНКТ ПОЛУЧЕНИЯ</label><br>
+										<input class="forform" type="text" name="pickupPoint" placeholder="ВРЕМЕННО НЕДОСТУПНО" id="pickupPoint">
+										<!--<div class="forhint2" style="font-family: 'DaMiOne';" id="pickup-list"></div> -->
+									</div>
+								<div class="row" style="margin-top: 70px;">
+									<input type="checkbox" id="agreement" name="agreement" required class="persd">
+									<label class="tforform" id="termsCheckbox" for="agreement" style="margin-left: 10px;">Я согласен на обработку <br>персональных данных</label>
+								</div>
+								
+							</div>
+						</div>
+						
+					<h2 id="final" style="margin-top: 30px; text-align: right; margin-right: 100px;">ИТОГ: Р</h2>
+						
+						
+					<div style="margin-top: 50px; width: 100%; margin-bottom: 100px;" class="parent">	
+							<button class="buttom1" type="button" id="submitBtn">ОПЛАТИТЬ</button>
+					</div>
+		</div>						 
+	</body>
+</html>
