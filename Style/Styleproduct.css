@@ -14,10 +14,10 @@
 	}
 	@font-face {
 		font-family: 'DaMiOne';
-		src: url('Fonts/DaMiOne-Regular.eot'); /* IE */
-		src: url('Fonts/DaMiOne-Regular.woff2') format('woff2'),
-			 url('Fonts/DaMiOne-Regular.woff') format('woff'),
-			 url('Fonts/DaMiOne-Regular.ttf') format('truetype');
+		src: url('../Fonts/DaMiOne-Regular.eot'); /* IE */
+		src: url('../Fonts/DaMiOne-Regular.woff2') format('woff2'),
+			 url('../Fonts/DaMiOne-Regular.woff') format('woff'),
+			 url('../Fonts/DaMiOne-Regular.ttf') format('truetype');
 	}
 	h2, h4, h6 {
 		font-family: 'DaMiOne';
