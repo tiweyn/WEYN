@@ -1,0 +1,59 @@
+.only-mobile,
+.only-all {
+    display: none;
+}
+
+/* Показываем only-mobile ТОЛЬКО на мобильных */
+@media (max-width: 600px) {
+    .only-mobile {
+        display: block;
+        background-color: black;
+        background-image: none !important;
+    }
+    .only-all {
+        display: none; /* Скрываем .only-all на мобильных */
+    }
+    /* Убираем фоновое изображение на мобильных */
+    body {
+        background-image: none !important;
+    }
+}
+
+/* Показываем only-all ТОЛЬКО на планшетах и ПК */
+@media (min-width: 1025px) {
+    .only-all {
+        display: block;
+    }
+}
+
+body {
+    font-size: 18px;
+    background: black;
+    background-image: url(../Image/Background01.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center;
+	background-position: top;
+}
+@font-face {
+    font-family: 'DaMiOne';
+    src: url('Fonts/DaMiOne-Regular.eot'); /* IE */
+    src: url('Fonts/DaMiOne-Regular.woff2') format('woff2'),
+         url('Fonts/DaMiOne-Regular.woff') format('woff'),
+         url('Fonts/DaMiOne-Regular.ttf') format('truetype');
+}
+h2, h3 {
+    font-family: 'DaMiOne';
+}
+a.text:active, /* активная/посещенная ссылка */
+a.text:hover,  /* при наведении */
+a.text {
+  text-decoration: none;
+  color: #666;
+}
+.parent {
+    display: grid;                         
+    place-items: center;                       
+}
+
