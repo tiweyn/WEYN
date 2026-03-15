@@ -1,2 +1,1 @@
-# WEYN
-dot-com
+# WEYN DOT-COM
